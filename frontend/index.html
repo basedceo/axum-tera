@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "utils/header.html" %}
+<body>
+  <h1 class="title">{{page_title}}</h1>
+  <p>{{message}}</p>
+  <p>This is the 2nd paragraph line</p>
+  <a class="button" href="/about">About Page</a>
+  <button class="button is-primary">
+    Button
+  </button>
+  <p>{% for month in months %}
+  <li>{{loop.index}}. {{month}}</li>
+      {% endfor %}</p>
+</body>
+</html>
+
